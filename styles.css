@@ -1,0 +1,76 @@
+        body {
+            background-color: #cacaff;
+        }
+
+        @font-face {
+            font-family: photoFont;
+            src: url(assets/photoFont.ttf);
+        }
+
+        @font-face {
+            font-family: boldSerifs;
+            src: url(assets/boldSerifs.otf);
+        }
+
+
+        h1 {
+            color: #5555a6;
+            stroke-width: 20px;
+        }
+
+        h2{
+            color: black;
+            stroke-width: 10px;
+            font-size: 20px;
+        }
+
+        p {
+            color: black;
+        }
+
+        header {
+            background-color: #505065;
+            padding: 20px;
+            font-size: clamp(24px, 8vw, 75px);
+            text-align: left;
+            font-family: boldSerifs; 
+            margin:10px; 
+            line-height: 0.6;
+            border-radius: 20px;
+
+     
+
+            
+
+        button {
+            border-radius: 20%;
+            border: navy;
+            border-width: 30px;
+            color: black;
+            font-family: photoFont;
+            font-size: 40px;
+            background-color:rgb(170, 170, 203);
+            padding: 5px;
+        }
+
+        button:hover{
+            color:rgb(15, 15, 15);
+            font-size: 39px;
+            background-color:rgb(143, 143, 203)
+        };
+        }
+
+        .about{
+            font-size: 30px;
+        }
+
+        /* header div{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                white-space: nowrap;
+                overflow: hidden;
+            } */
+
+      /* clamp(24px, 8vw, 75px) */
+
