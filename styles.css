@@ -28,6 +28,10 @@
             color: black;
         }
 
+        a{
+            color: inherit;
+            text-decoration: none;
+        }
         header {
             background-color: #505065;
             padding: 20px;
@@ -38,7 +42,7 @@
             line-height: 0.6;
             border-radius: 20px;
 
-     
+        
 
             
 
@@ -51,6 +55,7 @@
             font-size: 40px;
             background-color:rgb(170, 170, 203);
             padding: 5px;
+            transition: 50ms;
         }
 
         button:hover{
@@ -58,6 +63,8 @@
             font-size: 39px;
             background-color:rgb(143, 143, 203)
         };
+        
+        
         }
 
         .about{
