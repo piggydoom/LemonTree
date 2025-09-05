@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <link rel="stylesheet" href="styles.css"> <link rel="icon" type="image/x-icon" href="images/lemonTreePhtgrphy.png">
-
 <head>
 <title>order</title>
 </head>
@@ -27,8 +26,9 @@
          
     </header>
 
-
     <div class="orderBox">
+        <form>
+            
         <p class="infoBlock"><label for="firstName">Full name</label>
         <input id="firstName" placeholder="First Name"><input id="middleName" placeholder="Middle Name"><input id="lastName" placeholder="Surname"></p>
        
@@ -38,11 +38,20 @@
         <p class="infoBlock"><label for="location">Location</label>
         <input id="location" placeholder="address"></p>
 
-        <p class="infoBlock"><label for="desc">Location</label>
+        <p class="infoBlock"><label for="desc">Description</label>
         <input id="desc" placeholder="description">
         
         <p class="infoBlock"><label for="time">Time</label>
-        <select id="time">
+        <input id="start" placeholder="0:00" type="time">-<input id="end" placeholder="0:00" type="time">
+        </p>
+        <button id="submitButton">submit</button>
+    </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+
+<!-- <select id="time">
             <option value="1h">1h</option>
             <option value="2h">2h</option>
             <option value="3h">3h</option>
@@ -50,9 +59,4 @@
             <option value="5h">5h</option>
             <option value="6h">6h</option>
             <option value="other">other</option>
-        </select>
-        
-        </p>
-
-    </div>
-</body>
+        </select> -->
