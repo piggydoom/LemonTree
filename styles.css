@@ -75,22 +75,15 @@
         }
 
         .about {
-            padding-right: 60%;
-            padding-left: 30px;
-        
+            text-align: left;
+            padding-left: 20px;
+            margin-right: 60%;
+
             text-wrap{
                     text-wrap: wrap;
             }
-            h2{
-                font-size: 30px;
-            }
-
-            p{
-                font-size: 20px;
-            }
-
             
-        }
+        }        
 
         /* image stuff */
 
@@ -109,7 +102,7 @@
         .orderBox {
             border-radius: 20px;
             background-color: #7373b9;
-            margin: 50px;
+            margin-left: 5%;
             margin-right: 30%;
             padding: 35px;
             label {
@@ -128,4 +121,22 @@
             .infoBlock{
                 margin-bottom: 1px;
             }
+
+            button{
+                padding-top: 1.6%;
+                padding-bottom: 1.6%;
+                padding-right: 3%;
+                padding-left: 3%;
+                background-color: #d1d1ff;
+                border-color: #5555a6;
+                transition-duration: 200ms;
+
+                
+            }
+            button:hover{
+                    background-color: #b4b4fd;
+                    border-radius: 20px;
+            }
+
+            
         }
