@@ -75,7 +75,21 @@
         }
 
         .about {
-            font-size: 30px;
+            padding-right: 60%;
+            padding-left: 30px;
+        
+            text-wrap{
+                    text-wrap: wrap;
+            }
+            h2{
+                font-size: 30px;
+            }
+
+            p{
+                font-size: 20px;
+            }
+
+            
         }
 
         /* image stuff */

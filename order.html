@@ -27,7 +27,7 @@
     </header>
 
     <div class="orderBox">
-        <form>
+        <!-- <form> -->
             
         <p class="infoBlock"><label for="firstName">Full name</label>
         <input id="firstName" placeholder="First Name"><input id="middleName" placeholder="Middle Name"><input id="lastName" placeholder="Surname"></p>
@@ -44,8 +44,10 @@
         <p class="infoBlock"><label for="time">Time</label>
         <input id="start" placeholder="0:00" type="time">-<input id="end" placeholder="0:00" type="time">
         </p>
-        <button id="submitButton">submit</button>
-    </form>
+
+        <button id="submitButton" onclick= "saveAllData()">submit</button>
+
+    <!-- </form> -->
     </div>
     <script src="script.js"></script>
 </body>
