@@ -27,11 +27,11 @@
     </header>
 
     <div class="orderBox">
-        <!-- <form> -->
-        <h2 style="font-family:monospace">Order online</h2>
+        
+        <h2 >Order online</h2>
 
         <p class="infoBlock"><label for="firstName">Full name</label>
-        <input id="firstName" placeholder="First Name"><input id="middleName" placeholder="Middle Name"><input id="lastName" placeholder="Surname"></p>
+        <input id="firstName" placeholder="First Name", type="text"><input id="middleName" placeholder="Middle Name"><input id="lastName" placeholder="Surname"></p>
        
         <p class="infoBlock"><label for="phoneNum">Phone Number</label>
         <input id="phoneNum" placeholder="Phone Number"></p>
@@ -40,37 +40,24 @@
         <input id="location" placeholder="address"></p>
 
         <p class="infoBlock"><label for="desc">Description</label>
-        <input id="desc" placeholder="description">
+        <input id="desc" placeholder="description" style="padding-bottom: 10%; padding-right: 20%;">
         
         <p class="infoBlock"><label for="time">Time</label>
         <input id="start" placeholder="0:00" type="time">-<input id="end" placeholder="0:00" type="time">
-        </p>
 
-        
-
-    <!-- </form> -->
-    </div>
-
-    <div class="submit">
         <button id="submitButton" onclick= "saveAllData()">submit</button>
+        </p>
     </div>
-
 
     <div class="contact">
-        <h2>contact directly</h2>
 
+        <h2>contact directly</h2>
+        
+            <p>
+                <img src="images/emailLogo.png" width="3%">
+                <h6>lemonTreePhotos@shuttersnap.org</h6>
+            </p>
 
     </div>
     <script src="script.js"></script>
 </body>
-
-
-<!-- <select id="time">
-            <option value="1h">1h</option>
-            <option value="2h">2h</option>
-            <option value="3h">3h</option>
-            <option value="4h">4h</option>
-            <option value="5h">5h</option>
-            <option value="6h">6h</option>
-            <option value="other">other</option>
-        </select> -->

@@ -14,7 +14,7 @@
 
         @font-face {
             font-family: normalSerifs;
-            src: url(assets/CalmSerif-1j6G4.otf);
+            src: url(assets/CalmSerif.otf);
         }
 
         h1 {
@@ -138,5 +138,19 @@
                     border-radius: 20px;
             }
 
-            
+            h2{
+                font-family:monospace
+            }    
+        }
+
+        .contact{
+            h6{
+                font-size: 80%;
+                font-family: normalSerifs;
+            }
+
+            img{
+                display: flex;
+                float:left;
+            }
         }

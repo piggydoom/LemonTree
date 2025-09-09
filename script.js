@@ -23,3 +23,12 @@ console.log(start.value, "-", end.value)
 
 };
 
+
+function copy(){
+    const copyText = document.getElementById("emailText")
+
+     copyText.select();
+     copyText.setSelectionRange(0, 99999); 
+     navigator.clipboard.writeText(copyText.value);
+     alert("Copied the text: " + copyText.value);
+};
