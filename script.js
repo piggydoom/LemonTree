@@ -39,8 +39,17 @@ function makePost(){
     let postText= document.getElementById('postText')
     console.log(postText.value);
 
+    // let userAndText = ((getElementById = username.value) + " | " + (getElementById = postText.value))
 
-
+    //div
+    const xPost= document.createElement("div")
+    //div
+    
+    const user= document.createElement("p");
+    user.classList.add("username")
+    user.innerText = getElementById = username.value
+    document.xPost.appendChild(user);
+    
     const post= document.createElement("p");
     post.innerText = getElementById = postText.value
     document.body.appendChild(post);   
