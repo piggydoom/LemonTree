@@ -13,6 +13,7 @@ let description= document.getElementById('desc')
 let start= document.getElementById('start')
 let end= document.getElementById('end')
 
+
 console.log(firstName.value)
 console.log(middleName.value)
 console.log(lastName.value)
@@ -31,4 +32,19 @@ function copy(){
      copyText.setSelectionRange(0, 99999); 
      navigator.clipboard.writeText(copyText.value);
      alert("Copied the text: " + copyText.value);
+};
+
+
+function makePost(){
+    let postText= document.getElementById('postText')
+    console.log(postText.value);
+
+
+
+    const post= document.createElement("p");
+    post.innerText = getElementById = postText.value
+    document.body.appendChild(post);   
+    
+    // const username= document.createElement("p");
+    // post.innerText = getElementById = username.value
 };

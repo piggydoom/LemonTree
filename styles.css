@@ -51,25 +51,26 @@
 
 
 
-            button {
-                border-radius: 20%;
+            button{
+                border-radius: 20px;
                 border: navy;
-                border-width: 30px;
+                /* border-width: 30px; */
                 color: black;
                 font-family: photoFont;
                 font-size: 40px;
                 background-color: rgb(170, 170, 203);
                 padding: 5px;
-                transition: 50ms;
-            }
+                transition: 300ms;
+            };
 
             button:hover {
                 color: rgb(15, 15, 15);
                 font-size: 39px;
-                background-color: rgb(143, 143, 203)
-            }
+                background-color: rgb(143, 143, 203);
+                font-size: 37px;
+            };
 
-            ;
+            
 
 
         }
@@ -153,4 +154,53 @@
                 display: flex;
                 float:left;
             }
+        }
+
+        .makePost{
+            font-family: normalSerifs;
+            background-color: #7373b9;
+            margin: 3%;
+            margin-left: 1%;
+            padding-bottom: 20px;
+            padding-left: 10px;
+            border-radius: 20px;
+
+            input{
+                font-family: normalSerifs;
+                border-color: #5555a6;
+                background-color: #d1d1ff;
+                border-radius: 5px;
+                transition: 400ms;
+            }
+
+            button{
+                font-family: normalSerifs;
+            }
+
+            #postTitle:hover{
+                border-radius: 20px;
+                background-color: #b4b4fd;
+                text-indent: 2px;
+            }
+
+            #postText:hover{
+                
+                border-radius: 20px;
+                background-color: #b4b4fd;
+                text-indent: 6px;
+            }
+
+            .postButton{
+            margin-top: 10px;
+            padding: 4px;
+            border-color: #5555a6;
+            background-color: #d1d1ff;
+            border-radius: 3px;
+            transition: 200ms;
+            }
+            .postButton:hover{
+            background-color: #b4b4fd;
+            border-radius: 10px;                
+            }
+          
         }

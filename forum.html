@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" type="image/x-icon" href="images/lemonTreePhtgrphy.png">
+
+<head>
+    <title>Lemon Tree</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <header>
+        <div style="padding-bottom: 5px;">
+            LemonTree Photography
+            <img src="images/lemonTreePhtgrphy.png"
+                style="width:75px; padding-left: 5px; display: inline-flex; text-align: right;" />
+        </div>
+
+        <a href="home.html">
+            <button>home</button>
+        </a>
+
+        <a href="order.html">
+            <button>order</button>
+        </a>
+
+        <a href="showCase.html">
+            <button>showcase</button>
+
+        </a>
+
+    </header>
+
+    <input id="username" placeholder="username" style="border-color: #5555a6; background-color: #d1d1ff;">
+
+    <div class="makePost" style="padding-top: 3%;">
+        <input id="postTitle" placeholder="title">
+        <br>
+        <input id="postText" placeholder="text" style="padding-bottom: 200px; padding-right: 100px;">
+        <br>
+        <button class="postButton" onclick=makePost();>post</button>
+    </div>
+
+    <!-- <script>
+// Create element:
+const para = document.createElement("p");
+para.innerText = "This is a paragraph.";
+
+// Append to body:
+document.body.appendChild(para);
+</script> -->
+
+<script src="script.js"></script>
+</body>
