@@ -208,3 +208,28 @@
         .username{
             color: aqua;
         }
+
+        /* published posts */
+        .post{
+            background-color: #a1a1de;
+            border-radius: 20px;
+            padding: 10px;
+            margin-top: 10px;
+
+            #user{
+                font-family: boldSerifs;
+                color: black;
+                opacity: 40%;
+            }
+
+            #title{
+                font-family: boldSerifs;
+                color: black;
+                padding-left: 5px;
+            }
+
+            #postText{
+                font-family: normalSerifs;
+                color: #26263a;
+            }
+        }

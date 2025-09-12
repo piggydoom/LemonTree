@@ -36,24 +36,32 @@ function copy(){
 
 
 function makePost(){
-    let postText= document.getElementById('postText')
-    console.log(postText.value);
-
-    // let userAndText = ((getElementById = username.value) + " | " + (getElementById = postText.value))
+    //MAKING THE POST
 
     //div
-    const xPost= document.createElement("div")
+    const postDiv= document.createElement("div")
+    document.body.appendChild(postDiv);
+    postDiv.classList.add("post")
     //div
     
-    const user= document.createElement("p");
-    user.classList.add("username")
+    //user
+    const user= document.createElement("span");
     user.innerText = getElementById = username.value
-    document.xPost.appendChild(user);
+    postDiv.appendChild(user);
+    user.id = "user"
     
+    //title
+    const title= document.createElement("span");
+    title.innerText = getElementById = postTitle.value  
+    postDiv.appendChild(title); 
+    title.id = "title"
+
+    //post text
     const post= document.createElement("p");
-    post.innerText = getElementById = postText.value
-    document.body.appendChild(post);   
+    post.innerText = getElementById = postText.value  
+    postDiv.appendChild(post); 
+    post.id = "postText"
+
+    //SAVING THE POST
     
-    // const username= document.createElement("p");
-    // post.innerText = getElementById = username.value
 };
