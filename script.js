@@ -1,5 +1,9 @@
 // let submitButton = document.getElementById('submitButton')
 
+var unique = require('uniq');
+
+var data = [1, 2, 2, 3, 4, 5, 5, 5, 6];
+
 function saveAllData(){
     
 let firstName= document.getElementById('firstName')
@@ -10,6 +14,7 @@ let location= document.getElementById('location')
 let description= document.getElementById('desc')
 let start= document.getElementById('start')
 let end= document.getElementById('end')
+
 
 
 console.log(firstName.value)
@@ -61,13 +66,24 @@ function makePost(){
     post.id = "postText"
 
     //SAVING THE POST
+    const fs = require('fs');
+    let newPost = postDiv.innerHTML  
+    let jsonString = JSON.stringify('newPost');
+    const data = fs.readFileSync('data.json');
+    const jsonData = JSON.parse(data);
+
+    jsonData.forumPosts.push({
+    jsonString
+    // or any other data we want to add in that object
+    });
+    fs.writeFileSync('data.json', JSON.stringify(jsonData));
+        
+};
+
 
     // displays HTML code for them -> console.log(postDiv.innerHTML) | to display just text -> .innerText
 
-    // let newPost = postDiv.innerHTML DOWNLOADS JSON FILE OF NEWPOST
-    
-    let jsonString = JSON.stringify(newPost);
-
+    // DOWNLOADS JSON FILE OF NEWPOST
     // const filename = 'my_data.json';
     // const jsonContent = JSON.stringify({ savedData: postDiv.innerHTML }, null, 2); // null, 2 for pretty printing
     // const blob = new Blob([jsonContent], { type: 'application/json' });
@@ -80,15 +96,3 @@ function makePost(){
     // a.click();
     // document.body.removeChild(a);
     // URL.revokeObjectURL(url); // Clean up the URL object
-
-    const data = fs.readFileSync('data.json');
-    const jsonData = JSON.parse(data);
-
-
-    jsonData.forumPosts.push({
-    jsonString
-    // or any other data we want to add in that object
-    });
-    fs.writeFileSync('data.json', JSON.stringify(jsonData));
-        
-};
