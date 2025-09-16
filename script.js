@@ -1,7 +1,5 @@
 // let submitButton = document.getElementById('submitButton')
 
-
-
 function saveAllData(){
     
 let firstName= document.getElementById('firstName')
@@ -63,5 +61,34 @@ function makePost(){
     post.id = "postText"
 
     //SAVING THE POST
+
+    // displays HTML code for them -> console.log(postDiv.innerHTML) | to display just text -> .innerText
+
+    // let newPost = postDiv.innerHTML DOWNLOADS JSON FILE OF NEWPOST
     
+    let jsonString = JSON.stringify(newPost);
+
+    // const filename = 'my_data.json';
+    // const jsonContent = JSON.stringify({ savedData: postDiv.innerHTML }, null, 2); // null, 2 for pretty printing
+    // const blob = new Blob([jsonContent], { type: 'application/json' });
+    // const url = URL.createObjectURL(blob);
+
+    // const a = document.createElement('a');
+    // a.href = url;
+    // a.download = filename;
+    // document.body.appendChild(a);
+    // a.click();
+    // document.body.removeChild(a);
+    // URL.revokeObjectURL(url); // Clean up the URL object
+
+    const data = fs.readFileSync('data.json');
+    const jsonData = JSON.parse(data);
+
+
+    jsonData.forumPosts.push({
+    jsonString
+    // or any other data we want to add in that object
+    });
+    fs.writeFileSync('data.json', JSON.stringify(jsonData));
+        
 };
